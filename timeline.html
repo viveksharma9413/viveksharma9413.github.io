@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Timeline | Vivek Sharma</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/timeline.css" />
+  <link rel="icon" href="assets/images/favicon.ico" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1>Career Timeline</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timeline.html" class="active">Timeline</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <div class="timeline" id="timeline"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vivek Sharma. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/timeline.js"></script>
+
+    <!-- Modal Overlay -->
+    <div id="companyModal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div id="modalBody">
+          <!-- Content dynamically inserted -->
+        </div>
+      </div>
+    </div>
+</body>
+</html>
