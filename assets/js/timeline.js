@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       company: "CertifyOS",
       date: "Sep 2024 – Present",
-      title: "Senior Data Engineer / Lead",
+      title: "Data Engineering Lead",
       // description:
-      //   "Led the CB1.5 pipeline — a config-driven data ingestion system handling 500+ file variations. Developed a fuzzy Matching Engine to improve attribution accuracy to 97%. Implemented NCQA License Refresh automation and served as de facto Data Engineering Lead.",
+      //   "Led the CB1.5 pipeline — a config-driven ELT system handling 500+ file variations, orchestrated with Apache Airflow, Airbyte ingestion, and dbt models. Developed a fuzzy Matching Engine to improve attribution accuracy to 97%. Implemented NCQA License Refresh automation while leading the Data Engineering team.",
       type: "type1",
       icon: "💼",
       link: "companies/certifyos.html"
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       date: "Oct 2022 – Sep 2024",
       title: "Senior Data Engineer",
       // description:
-      //   "Architected the Singlestore ETL Framework, enabling real-time + batch ingestion across Trino, Hive, and S3. Built internal tooling including a Data Extractor Utility and Hive Table Cloner. Supported cost-effective, cross-region analytics.",
+      //   "Led a dbt-on-Snowflake analytics layer (120+ tested models) and built Airbyte-based ingestion frameworks across Singlestore, Trino, Hive, and S3. Delivered self-serve, cost-tuned analytics for Marketing Ops, SalesOps, and Data Science.",
       type: "type2",
       icon: "🔧",
       link: "companies/6sense.html"

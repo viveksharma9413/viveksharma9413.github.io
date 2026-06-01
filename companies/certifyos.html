@@ -75,31 +75,35 @@
   <div class="modal-card">
 
     <h2>🏥 CertifyOS</h2>
-    <p><strong>Senior Data Engineer | Aspiring Data Architect | Engineering Leader</strong></p>
+    <p><strong>Data Engineering Lead | Data Architect | Engineering Leader</strong></p>
 
     <div class="section-divider"></div>
 
     <h3>Professional Summary</h3>
     <p>
-      Senior Data Engineer at <strong>CertifyOS</strong>, leading the design and delivery of large-scale healthcare compliance and provider attribution systems.
-      Functioning as a <strong>Data Engineering Lead</strong>, I architect pipelines, mentor engineers, and align across cross-functional teams.
+      <strong>Data Engineering Lead</strong> at <strong>CertifyOS</strong>, leading the design and delivery of large-scale healthcare compliance and provider attribution systems.
+      I architect pipelines, mentor engineers, and align across cross-functional teams.
     </p>
     <br/>
     <p>
-      With deep expertise in GCP, BigQuery, Cloud Composer, Cloud Function, Cloud logger and API integration, I’ve built reusable, automated systems powering workflows such as
-      NPPES integrations, NCQA license compliance, and sanctions ingestion.
+      With deep expertise in the modern data stack — <strong>Apache Airflow</strong>, <strong>dbt</strong>,
+      <strong>Airbyte</strong>, and <strong>Snowflake</strong> — I’ve built reusable, automated ELT systems powering
+      NPPES integrations, NCQA license compliance, and sanctions ingestion. I lead dbt-based modeling across both
+      <strong>Snowflake</strong> and BigQuery, with Airflow orchestration and Airbyte source ingestion.
     </p>
 
     <div class="section-divider"></div>
 
     <h3>Core Competencies</h3>
     <div>
+      <span class="pill">Apache Airflow (Cloud Composer)</span>
+      <span class="pill">dbt (Models, Tests, Snapshots)</span>
+      <span class="pill">Airbyte EL Ingestion</span>
+      <span class="pill">Snowflake / BigQuery</span>
       <span class="pill">SCD Type 2 & Temporal Modeling</span>
       <span class="pill">BigQuery / GCS / PubSub / Cloud Functions</span>
       <span class="pill">Python, SQL, Bash, GitHub Actions</span>
-      <span class="pill">Cloud Composer & DAG Design</span>
       <span class="pill">API Payload Mapping</span>
-      <span class="pill">Schema Integration</span>
       <span class="pill">DataOps & Automation</span>
     </div>
 
@@ -110,7 +114,7 @@
       <li>Presented architectural designs to Directors and Chief Architects</li>
       <li>Led sprint planning, backlog grooming, and team alignment</li>
       <li>Owned technical decision-making across Platform, Pipeline, and Scraper teams</li>
-      <li>Mentored junior engineers and analysts in BigQuery and pipeline design</li>
+      <li>Mentored junior engineers and analysts on dbt modeling, Airbyte ingestion, and pipeline design</li>
       <li>Defined CI/CD practices, semantic versioning, and GitHub workflows</li>
     </ul>
 
@@ -127,19 +131,24 @@
       </thead>
       <tbody>
         <tr>
+          <td>Snowflake Compliance Data Marts</td>
+          <td>Architect & Lead</td>
+          <td>Designed <strong>dbt</strong> models on <strong>Snowflake</strong> serving provider-compliance and license-freshness marts. Used <strong>incremental models</strong> for sanctions history, <strong>snapshots</strong> for SCD Type 2 license states, and <strong>dbt tests</strong> (not_null, unique, relationships, freshness) to guarantee NCQA-grade data quality. Orchestrated runs via <strong>Airflow</strong> with Airbyte-loaded sources.</td>
+        </tr>
+        <tr>
           <td>CB1.5 Pipeline – Sanctions & License Ingestion</td>
           <td>Lead Engineer & Architect</td>
-          <td>Migrated 500+ manually handled license files into a job-config-based GCP pipeline using Cloud Composer and BigQuery.</td>
+          <td>Migrated 500+ manually handled license files into a job-config-based ELT pipeline. Orchestrated with <strong>Apache Airflow (Cloud Composer)</strong>, ingested via <strong>Airbyte</strong>, and transformed with <strong>dbt models</strong> in BigQuery.</td>
         </tr>
         <tr>
           <td>SCD Type 2 Utility</td>
           <td>Designer & Developer</td>
-          <td>Hash-based historical tracking with isCurrent, startDate, and endDate logic. Used across multiple compliance datasets.</td>
+          <td>Built reusable <strong>dbt snapshot and incremental models</strong> on <strong>Snowflake</strong> and BigQuery for hash-based SCD Type 2 tracking with isCurrent, startDate, and endDate logic across compliance datasets.</td>
         </tr>
         <tr>
           <td>NPPES to DAL Transformation</td>
           <td>Architect & Engineer</td>
-          <td>Built flat-to-nested transformations in BigQuery SQL to map NPPES data into DAL API schema.</td>
+          <td>Built <strong>dbt staging and mart models</strong> in BigQuery to map flat NPPES data into nested DAL API schema (300+ column mappings).</td>
         </tr>
         <tr>
           <td>Matching Engine</td>
@@ -149,12 +158,12 @@
         <tr>
           <td>Scraper Automation DAG</td>
           <td>Builder & Coordinator</td>
-          <td>Built orchestrated DAG to handle license enrichment, validation, and ingestion pipelines from scraper outputs.</td>
+          <td>Built an <strong>Airflow DAG</strong> orchestrating <strong>Airbyte</strong> syncs from scraper outputs into validation, enrichment, and compliance pipelines.</td>
         </tr>
         <tr>
           <td>NCQA License Refresh</td>
           <td>Designer</td>
-          <td>Ensured all licenses refreshed within 30-day SLA. Tracked freshness and piped into downstream compliance systems.</td>
+          <td><strong>Airflow-orchestrated</strong> pipeline ensuring all licenses refreshed within 30-day SLA. Tracked freshness and piped into downstream compliance systems.</td>
         </tr>
         <tr>
           <td>GitHub Actions Release Pipelines</td>
@@ -185,8 +194,9 @@
         <tr><td>Provider Attribution</td><td>⬆ Improved from <strong>75% to 97%</strong></td></tr>
         <tr><td>License Refresh Automation</td><td>🚀 Migrated <strong>500+ script-based processors</strong> into a unified DAG</td></tr>
         <tr><td>NCQA Compliance</td><td>⏱ Maintained license freshness within <strong>30-day SLA</strong></td></tr>
+        <tr><td>Data Quality</td><td>✅ Enforced NCQA-grade integrity via <strong>dbt tests</strong> on Snowflake marts (freshness, uniqueness, referential checks)</td></tr>
         <tr><td>Manual Effort</td><td>❌ Eliminated manual processing via job-config templates</td></tr>
-        <tr><td>Code Reuse</td><td>♻️ Delivered frameworks adopted org-wide across datasets</td></tr>
+        <tr><td>Modeling Velocity</td><td>♻️ Reusable dbt macros + layered models accelerated new compliance dataset onboarding</td></tr>
       </tbody>
     </table>
 

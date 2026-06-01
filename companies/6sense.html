@@ -82,25 +82,27 @@
 
     <h3>Professional Summary</h3>
     <p>
-      At <strong>6sense</strong>, I worked in the Big Data Platform team, helping build frameworks for real-time and batch ingestion,
-      reporting, and analytics. I supported platform-wide initiatives powering one of the industry’s largest Spark + Trino clusters —
+      At <strong>6sense</strong>, I worked in the Big Data Platform team, building frameworks for real-time and
+      batch ingestion, transformation, and analytics powering one of the industry’s largest Spark + Trino clusters —
       handling over 1 million jobs per day.
     </p>
     <p>
-      I contributed to customer-facing product pipelines, led internal tooling efforts, and optimized workflows across data engineering,
-      marketing ops, and analytics stakeholders.
+      I led the rollout of a <strong>dbt-on-Snowflake</strong> analytics layer, migrating brittle hand-written SQL
+      into tested, version-controlled dbt models and standing up Snowflake as the curated reporting warehouse for
+      Marketing Ops, SalesOps, and Data Science stakeholders.
     </p>
 
     <div class="section-divider"></div>
 
     <h3>Core Competencies</h3>
     <div>
+      <span class="pill">Snowflake (Warehousing, RBAC, Cost Tuning)</span>
+      <span class="pill">dbt (Models, Tests, Macros, Snapshots)</span>
+      <span class="pill">Airbyte CDC Connectors</span>
+      <span class="pill">Apache Airflow</span>
       <span class="pill">Spark / Delta Lake / Hive / Trino</span>
       <span class="pill">PySpark, SQL, Python</span>
-      <span class="pill">Singlestore, MySQL, PostgreSQL</span>
-      <span class="pill">ETL Frameworks</span>
       <span class="pill">S3, HDFS, AWS Lambda</span>
-      <span class="pill">CDC & Archival Pipelines</span>
       <span class="pill">Cross-region Deployments</span>
     </div>
 
@@ -128,14 +130,24 @@
       </thead>
       <tbody>
         <tr>
+          <td>Snowflake Analytics Warehouse Migration</td>
+          <td>Lead Developer</td>
+          <td>Stood up <strong>Snowflake</strong> as the curated analytics warehouse for ABM and revenue-intelligence reporting. Designed multi-layer schemas (raw → staging → marts), warehouse sizing, RBAC, and resource monitors — cutting query latency and giving analysts self-serve access independent of Spark clusters.</td>
+        </tr>
+        <tr>
+          <td>dbt Transformation Framework</td>
+          <td>Lead Developer</td>
+          <td>Built 6sense’s <strong>dbt</strong> project on Snowflake: 120+ models with staging/intermediate/mart layering, <strong>incremental models</strong> for high-volume lead-enrichment tables, <strong>snapshots</strong> for SCD tracking, plus <strong>schema/freshness tests</strong> and exposures wired into CI. Eliminated duplicated SQL and made transformations testable and documented.</td>
+        </tr>
+        <tr>
           <td>Singlestore ETL Framework</td>
           <td>Lead Developer</td>
-          <td>Built a unified framework for ingesting batch + CDC data into Singlestore with support for Trino, Hive, and auto-scaling ingestion patterns.</td>
+          <td>Built a unified framework for ingesting batch + CDC data via <strong>Airbyte</strong> into Singlestore and <strong>Snowflake</strong>, with Trino/Hive integration and auto-scaling ingestion patterns feeding the dbt transformation layer.</td>
         </tr>
         <tr>
           <td>Data Extractor Utility</td>
           <td>End-to-End Owner</td>
-          <td>Generic utility to archive filtered data from MySQL/Postgres into S3/HDFS. Enabled retention controls and self-serve ingestion.</td>
+          <td>Configured <strong>Airbyte</strong> source connectors to archive filtered data from MySQL/Postgres into S3/HDFS. Enabled retention controls and self-serve ingestion.</td>
         </tr>
         <tr>
           <td>Hive Table Cloning Utility</td>
@@ -163,6 +175,9 @@
         <tr><th>Area</th><th>Impact</th></tr>
       </thead>
       <tbody>
+        <tr><td>Analytics Self-Serve</td><td>📊 Delivered <strong>120+ tested dbt models</strong> on Snowflake, removing engineering bottlenecks for reporting</td></tr>
+        <tr><td>Warehouse Cost</td><td>💰 Tuned Snowflake warehouse sizing + auto-suspend to control compute spend</td></tr>
+        <tr><td>Data Quality</td><td>✅ dbt tests caught schema/freshness regressions before they hit dashboards</td></tr>
         <tr><td>Platform Efficiency</td><td>⏱ Improved batch + CDC ingestion latency across multiple Spark pipelines</td></tr>
         <tr><td>Developer Productivity</td><td>🚀 Enabled faster debugging and staging through table cloning tools</td></tr>
         <tr><td>Data Consistency</td><td>🔄 Standardized schema contracts across product and analytics teams</td></tr>

@@ -91,11 +91,13 @@
 
     <h3>Core Competencies</h3>
     <div>
-      <span class="pill">AWS S3 / Glue / EMR / Redshift</span>
+      <span class="pill">Snowflake</span>
+      <span class="pill">Airbyte CDC Ingestion</span>
+      <span class="pill">dbt SQL Transformations</span>
+      <span class="pill">AWS S3 / Glue / EMR</span>
       <span class="pill">Kinesis / SNS / SQS</span>
       <span class="pill">Data Lake Architecture</span>
       <span class="pill">Graph Analytics (Neptune)</span>
-      <span class="pill">Slack Bot Framework</span>
       <span class="pill">Team Mentorship</span>
       <span class="pill">Cost Optimization</span>
     </div>
@@ -126,7 +128,7 @@
         <tr>
           <td>Slice Data Lake</td>
           <td>Lead Developer</td>
-          <td>Implemented a PySpark + S3-based Delta-compatible Data Lake offloading MongoDB. Reduced infra cost by ~$10K/month.</td>
+          <td>Implemented a PySpark + S3-based Delta-compatible Data Lake offloading MongoDB. Real-time ingestion via Kinesis/Glue and <strong>Airbyte</strong> syncs. Reduced infra cost by ~$10K/month.</td>
         </tr>
         <tr>
           <td>Slice User Graph</td>
@@ -134,14 +136,14 @@
           <td>Built AWS Neptune-based graph for linking risky/good users. Enabled fraud detection and approval decisions.</td>
         </tr>
         <tr>
-          <td>S3 to Redshift/RDS Propagator</td>
+          <td>S3 to Snowflake/RDS Propagator</td>
           <td>Lead Developer</td>
-          <td>Developed a safe, analyst-friendly tool to push data into Redshift/RDS with validation and schema mapping.</td>
+          <td>Developed a safe, analyst-friendly tool to push data into <strong>Snowflake</strong> and RDS with validation and schema mapping.</td>
         </tr>
         <tr>
-          <td>Mongo to Redshift Pipeline</td>
+          <td>Mongo to Snowflake Pipeline</td>
           <td>Lead Developer</td>
-          <td>Enabled deep behavioral and risk analytics by ingesting transactional MongoDB data into Redshift.</td>
+          <td>Built <strong>Airbyte CDC ingestion</strong> from MongoDB to <strong>Snowflake</strong>, with <strong>dbt models</strong> for analytics marts. Saved ~$600/month vs third-party tools.</td>
         </tr>
         <tr>
           <td>Jarvis Slack Alerting Framework</td>

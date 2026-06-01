@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivek Sharma — Resume</title>
+  <style>
+    :root {
+      --ink: #1f2937;
+      --muted: #4b5563;
+      --accent: #1e40af;
+      --line: #d1d5db;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+      color: var(--ink);
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.4;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 1.5rem auto;
+      background: #fff;
+      padding: 2.4rem 2.6rem;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    }
+
+    header { border-bottom: 2px solid var(--accent); padding-bottom: 0.7rem; }
+    header h1 { margin: 0; font-size: 22pt; color: var(--accent); letter-spacing: 0.3px; }
+    header .title { margin: 0.2rem 0 0; font-size: 11pt; font-weight: 600; color: var(--muted); }
+    header .contact { margin: 0.45rem 0 0; font-size: 9.2pt; color: var(--muted); }
+    header .contact a { color: var(--accent); text-decoration: none; }
+
+    h2 {
+      font-size: 11pt;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.2rem;
+      margin: 1.3rem 0 0.6rem;
+    }
+
+    p { margin: 0 0 0.5rem; }
+    .summary { color: var(--muted); }
+
+    .skills { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 0.8rem; }
+    .skills dt { font-weight: 700; color: var(--ink); white-space: nowrap; }
+    .skills dd { margin: 0; color: var(--muted); }
+
+    .job { margin-bottom: 0.95rem; }
+    .job-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.2rem; }
+    .job-head .role { font-weight: 700; }
+    .job-head .role .company { color: var(--accent); }
+    .job-head .meta { font-size: 9pt; color: var(--muted); white-space: nowrap; }
+
+    ul { margin: 0.35rem 0 0; padding-left: 1.05rem; }
+    li { margin-bottom: 0.22rem; }
+    li b { color: var(--ink); }
+
+    .stack { font-size: 9pt; color: var(--muted); margin-top: 0.35rem; }
+    .stack b { color: var(--ink); }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1.4rem; }
+
+    .compact li { margin-bottom: 0.12rem; }
+
+    @media print {
+      body { background: #fff; font-size: 10pt; }
+      .page { box-shadow: none; margin: 0; max-width: none; padding: 0.5in 0.6in; }
+      h2 { margin-top: 0.9rem; }
+      a { color: var(--accent); }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Vivek Sharma</h1>
+      <p class="title">Senior Data Engineer · Modern Data Stack (Airflow · dbt · Airbyte · Snowflake)</p>
+      <p class="contact">
+        📍 Bengaluru, India &nbsp;|&nbsp;
+        📧 <a href="mailto:vivek051012@gmail.com">vivek051012@gmail.com</a> &nbsp;|&nbsp;
+        📞 <a href="tel:+919762134796">+91-9762134796</a>
+      </p>
+    </header>
+
+    <h2>Professional Summary</h2>
+    <p class="summary">
+      Data Engineering Lead with 9+ years architecting and scaling data platforms across healthcare, fintech, SaaS, and
+      AdTech. Specialist in the modern ELT stack — <b>Apache Airflow</b> for orchestration, <b>Airbyte</b> for source
+      ingestion, <b>dbt</b> for tested, version-controlled SQL transformations, and <b>Snowflake</b> (plus BigQuery and
+      Redshift) as the analytics warehouse. As Data Engineering Lead at CertifyOS, I drive healthcare
+      compliance systems including NPPES ingestion, license-freshness compliance, and sanctions matching. Seeking to
+      grow further into an Engineering Manager or Data Architect role.
+    </p>
+
+    <h2>Core Skills</h2>
+    <dl class="skills">
+      <dt>Modern Data Stack</dt>
+      <dd>Apache Airflow, dbt (models, tests, snapshots, macros), Airbyte, Snowflake</dd>
+      <dt>Warehouses</dt>
+      <dd>Snowflake, BigQuery, Amazon Redshift, Singlestore</dd>
+      <dt>Cloud</dt>
+      <dd>GCP (BigQuery, Composer, Dataflow, GCS, Pub/Sub), AWS (EMR, Glue, Lambda, Kinesis, RDS, S3)</dd>
+      <dt>Languages</dt>
+      <dd>Python, PySpark, SQL, Bash, JavaScript, C#</dd>
+      <dt>Processing</dt>
+      <dd>Spark, Databricks, Hive, Trino/Presto, Delta Lake, Kafka, Kinesis, Spark Streaming</dd>
+      <dt>Modeling</dt>
+      <dd>SCD Type 2, dbt staging/intermediate/mart layering, hash-based change tracking, audit logging</dd>
+      <dt>DevOps & DataOps</dt>
+      <dd>GitHub Actions, Docker, CI/CD, Artifact Registry, dbt tests in CI, data quality &amp; freshness checks</dd>
+      <dt>Leadership</dt>
+      <dd>Sprint planning, mentoring, architecture design, stakeholder communication</dd>
+    </dl>
+
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="role"><span class="company">CertifyOS</span> — Data Engineering Lead</span>
+        <span class="meta">Sep 2024 – Present · Remote (Bengaluru)</span>
+      </div>
+      <ul>
+        <li><b>Snowflake Compliance Data Marts:</b> Designed <b>dbt</b> models on <b>Snowflake</b> for provider-compliance and license-freshness marts — incremental models for sanctions history, snapshots for SCD Type 2 license states, and dbt tests (not_null, unique, relationships, freshness) guaranteeing NCQA-grade data quality. Orchestrated via <b>Airflow</b> on Airbyte-loaded sources.</li>
+        <li><b>CB1.5 Ingestion Pipeline:</b> Architected a config-driven ELT system handling 500+ state license formats, orchestrated with <b>Apache Airflow (Cloud Composer)</b>, ingested via <b>Airbyte</b>, and transformed with <b>dbt models</b> — reducing manual file handling to zero.</li>
+        <li><b>NPPES → DAL Transformation:</b> Built dbt staging and mart models mapping flat NPPES tables into deeply nested DAL API payloads across 300+ column mappings.</li>
+        <li><b>Matching Engine:</b> Co-developed a fuzzy matching system for sanctions records lacking NPIs, raising provider attribution accuracy from 75% to 97%.</li>
+        <li><b>NCQA License Refresh:</b> Built Airflow DAGs for prioritization, enrichment, validation, and warehouse ingestion ensuring all licenses refresh within a 30-day SLA.</li>
+        <li>Mentored 2 engineers and 3 analysts on dbt modeling, Airbyte ingestion, and pipeline design; presented architecture to Directors and Chief Architects.</li>
+      </ul>
+      <p class="stack"><b>Stack:</b> Snowflake, dbt, Airbyte, Airflow (Cloud Composer), BigQuery, GCS, Pub/Sub, Python, SQL, GitHub Actions, Docker</p>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="role"><span class="company">6sense</span> — Senior Data Engineer, Big Data Platform</span>
+        <span class="meta">Oct 2022 – Sep 2024 · Remote / Bengaluru</span>
+      </div>
+      <ul>
+        <li><b>dbt-on-Snowflake Analytics Layer:</b> Led the rollout of <b>Snowflake</b> as the curated analytics warehouse and built a <b>dbt</b> project of 120+ models (staging/intermediate/mart layering, incremental models, snapshots) with schema/freshness tests wired into CI — replacing brittle hand-written SQL and enabling self-serve reporting for Marketing Ops, SalesOps, and Data Science.</li>
+        <li><b>Snowflake Warehouse Design:</b> Defined multi-layer schemas, warehouse sizing, RBAC, and resource monitors — cutting query latency and controlling compute cost via auto-suspend tuning.</li>
+        <li><b>Ingestion Frameworks:</b> Built unified batch + CDC ingestion via <b>Airbyte</b> into Singlestore and Snowflake, with Trino/Hive integration and auto-scaling, feeding the dbt transformation layer.</li>
+        <li><b>Delta/Spark Optimization:</b> Tuned TB-scale Spark jobs, reducing lead-enrichment latency from 45min → 18min.</li>
+        <li>Owned internal tooling adopted across 5+ platform teams; collaborated with Staff+ engineers on multi-region ingestion benchmarking.</li>
+      </ul>
+      <p class="stack"><b>Stack:</b> Snowflake, dbt, Airbyte, Airflow, PySpark, Hive, Trino, Delta Lake, Singlestore, Kafka, AWS (S3, Lambda, RDS)</p>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="role"><span class="company">InCred Financial Services</span> — Tech Lead, Data Engineering</span>
+        <span class="meta">Apr 2021 – Sep 2022 · Bengaluru</span>
+      </div>
+      <ul>
+        <li>Architected a near real-time data platform ingesting CDC from MySQL/Postgres/DynamoDB via <b>Airbyte</b>, transforming in Databricks (PySpark, Autoloaders) with <b>dbt models</b> feeding Delta Lake and downstream <b>Snowflake</b> analytics.</li>
+        <li>Reduced infra spend by 30% via Databricks pool tuning and schedule optimization; improved job latency and refresh by 30%.</li>
+        <li>Migrated unstable on-prem Kafka-Dynamo pipelines to AWS-native Kinesis Firehose, improving uptime and observability. Mentored a 4-person team.</li>
+      </ul>
+      <p class="stack"><b>Stack:</b> Airbyte, dbt, Snowflake, Databricks, PySpark, Delta Lake, Kinesis, SQS, S3, DynamoDB, MLFlow</p>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="role"><span class="company">Slice</span> — Data Engineering Lead → Data Engineer</span>
+        <span class="meta">Nov 2019 – Apr 2021 · Bengaluru</span>
+      </div>
+      <ul>
+        <li><b>Data Lake & Warehouse:</b> Architected a PySpark → S3 → <b>Snowflake</b> system with Kinesis/Glue and <b>Airbyte</b> ingestion, offloading analytics from MongoDB and saving ~$10K/month.</li>
+        <li><b>Mongo → Snowflake Pipeline:</b> Built Airbyte CDC ingestion with <b>dbt models</b> for analytics marts, replacing third-party tooling (~$600/month saved).</li>
+        <li><b>Neptune Risk Engine:</b> Designed an AWS Neptune user graph linking risky/good users, directly informing credit underwriting.</li>
+        <li>Built and led a team of 3 engineers; created Jarvis, a Slack alerting framework adopted across product and analytics.</li>
+      </ul>
+      <p class="stack"><b>Stack:</b> Snowflake, dbt, Airbyte, AWS EMR, Glue, Kinesis, Neptune, SNS, Python, PySpark, S3, RDS, MongoDB</p>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="role"><span class="company">Particle41 India LLP</span> — Software Developer → Data Engineer</span>
+        <span class="meta">Nov 2016 – Oct 2019 · Pune</span>
+      </div>
+      <ul class="compact">
+        <li>Built Spark + Hive identity-onboarding pipelines on AWS EMR; developed a GraphFrames-based identity graph unifying cookies, devices, and emails.</li>
+        <li>Led an MLlib ad-targeting model for Vevo and delivered ETL revenue dashboards (Python/PETL, Redshift). Praised by U.S. client CTO for leadership and reliability.</li>
+      </ul>
+      <p class="stack"><b>Stack:</b> Spark, Hive, GraphFrame, AWS EMR, Python, ReactJS, C#, PostgreSQL, Redshift</p>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h2>Education</h2>
+        <ul class="compact">
+          <li>B.E. Information Technology — University of Pune, 2016 (73.08%)</li>
+          <li>12th (HSC) — KV No.3, Pune, 2011 (82.2%)</li>
+          <li>10th (SSC) — KV No.3, Pune, 2009 (91.2%)</li>
+        </ul>
+        <h2>Certifications</h2>
+        <ul class="compact">
+          <li>Introduction to Big Data — Coursera (Oct 2019)</li>
+          <li>SQL Fundamentals — SoloLearn (May 2016)</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Awards & Achievements</h2>
+        <ul class="compact">
+          <li>ACM ICPC Amritapuri Onsite Qualifier (2014)</li>
+          <li>Global Rank #242 — TCS CodeVita 2014</li>
+          <li>Facebook HackerCup & Google CodeJam Qualifier (2015)</li>
+          <li>Winner — C Programming, SAE Pune (2013)</li>
+        </ul>
+        <h2>Publication</h2>
+        <ul class="compact">
+          <li>Stock Market Forecasting Using Hybrid Methodology — IJIR, May 2016</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
